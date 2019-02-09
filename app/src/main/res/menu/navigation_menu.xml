@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/home" android:title="Home" android:icon="@drawable/ic_home_black_24dp" >Home</item>
+
+
+    <item android:id="@+id/search" android:title="Search" android:icon="@drawable/ic_search_black_24dp" >Search</item>
+
+    <item android:id="@+id/camera" android:title="Camera" android:icon="@drawable/ic_camera_alt_black_24dp" >Camera</item>
+
+    <item android:id="@+id/profile" android:title="Profile" android:icon="@drawable/ic_contacts_black_24dp" >Profile</item>
+
+    <item android:id="@+id/like" android:title="Like"
+        android:icon="@drawable/ic_mood_black_24dp" >Profile</item>
+
+ <!--   <item android:id="@+id/settings" android:title="Settings" android:icon="@drawable/ic_launcher_foreground" >Settings</item>
+   -->
+
+    <item android:id="@+id/log_out" android:title="Log out" android:icon="@drawable/ic_lock_outline_black_24dp" >Log out</item>
+
+
+
+</menu>

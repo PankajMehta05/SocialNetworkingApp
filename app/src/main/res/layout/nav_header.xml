@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:orientation="vertical"
+    android:background="@color/colorSemiPurple"
+    android:padding="20dp">
+
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/user_id"
+        android:src="@drawable/download"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+
+        android:textColor="@color/libraryColorWhite"
+        android:textStyle="bold"
+        android:id="@+id/user_name"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/user_id"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name@gmail.com"
+        android:id="@+id/user_email"
+        android:textColor="@color/libraryColorWhite"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

@@ -180,4 +180,18 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+       boolean isUserLoggedIn= SharedPrefrenceManager.getInstance((getApplicationContext())).isUserLoggedIn();
+       if(isUserLoggedIn)
+       {
+           startActivity(new Intent(LoginActivity.this,MainActivity.class));
+
+       }
+       else
+       {
+
+       }
+    }
 }

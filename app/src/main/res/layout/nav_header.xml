@@ -4,7 +4,8 @@
     android:layout_height="160dp"
     android:orientation="vertical"
     android:background="@color/colorSemiPurple"
-    android:padding="20dp">
+    android:padding="20dp"
+    android:layout_margin="20dp">
 
 
     <ImageView
@@ -19,7 +20,7 @@
         android:layout_height="wrap_content"
         android:text="Name"
 
-        android:textColor="@color/libraryColorWhite"
+
         android:textStyle="bold"
         android:id="@+id/user_name"
         android:layout_marginTop="8dp"
@@ -30,7 +31,7 @@
         android:layout_height="wrap_content"
         android:text="name@gmail.com"
         android:id="@+id/user_email"
-        android:textColor="@color/libraryColorWhite"
+
         android:textStyle="bold"/>
 
 

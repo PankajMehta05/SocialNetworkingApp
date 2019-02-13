@@ -46,8 +46,8 @@ public class Sign_up extends AppCompatActivity {
         animationDrawable = (AnimationDrawable) loginContainer.getBackground();
         animationDrawable.setEnterFadeDuration(5000);
         animationDrawable.setExitFadeDuration(2000);
-
         email_et = findViewById(R.id.user_email);
+        password_confirm_et=findViewById(R.id.user_password_confirm);
 
         go_to_login_btn = findViewById(R.id.go_to_login_btn);
         username_et = findViewById(R.id.user_name);
@@ -199,6 +199,21 @@ public class Sign_up extends AppCompatActivity {
         super.onPause();
         if (animationDrawable != null && animationDrawable.isRunning()) {
             animationDrawable.stop();
+        }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        boolean isUserLoggedIn= SharedPrefrenceManager.getInstance((getApplicationContext())).isUserLoggedIn();
+        if(isUserLoggedIn)
+        {
+            startActivity(new Intent(Sign_up.this,MainActivity.class));
+
+        }
+        else
+        {
+
         }
     }
 }

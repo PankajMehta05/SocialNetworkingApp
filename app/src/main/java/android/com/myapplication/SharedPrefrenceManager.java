@@ -22,6 +22,8 @@ private  SharedPrefrenceManager(Context context)
 
     public static synchronized SharedPrefrenceManager getInstance(Context context){
 
+
+
         if(sharedPrefrenceManager == null)
             sharedPrefrenceManager = new SharedPrefrenceManager(context);
         return sharedPrefrenceManager;
